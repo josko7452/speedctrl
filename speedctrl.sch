@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L speectrl_parts:BD6231 U2
+L speedctrl_parts:BD6231 U2
 U 1 1 5BA9883A
 P 8950 4150
 F 0 "U2" H 8950 3664 50  0000 C CNN
@@ -23,17 +23,6 @@ F 1 "BD6231" H 8950 3573 50  0000 C CNN
 F 2 "Package_SO:SSOP-8_3.95x5.21x3.27mm_P1.27mm" H 8700 4500 50  0001 C CNN
 F 3 "" H 8700 4500 50  0001 C CNN
 	1    8950 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L speectrl_parts:+16V #PWR0101
-U 1 1 5BA98EB0
-P 8950 3650
-F 0 "#PWR0101" H 8950 3500 50  0001 C CNN
-F 1 "+16V" H 8965 3823 50  0000 C CNN
-F 2 "" H 8950 3650 50  0001 C CNN
-F 3 "" H 8950 3650 50  0001 C CNN
-	1    8950 3650
 	1    0    0    -1  
 $EndComp
 Connection ~ 8950 3750
@@ -90,7 +79,7 @@ $EndComp
 Wire Wire Line
 	9000 5950 9000 5900
 $Comp
-L speectrl_parts:ATB3225 TR1
+L speedctrl_parts:ATB3225 TR1
 U 1 1 5BB580A9
 P 9350 2000
 F 0 "TR1" H 9350 2425 50  0000 C CNN
@@ -126,17 +115,6 @@ F 3 "~" H 8950 1450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8950 1800 8950 1600
-$Comp
-L speectrl_parts:+16V #PWR0104
-U 1 1 5BB58AF7
-P 8950 1150
-F 0 "#PWR0104" H 8950 1000 50  0001 C CNN
-F 1 "+16V" H 8965 1323 50  0000 C CNN
-F 2 "" H 8950 1150 50  0001 C CNN
-F 3 "" H 8950 1150 50  0001 C CNN
-	1    8950 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8950 1300 8950 1150
 $Comp
@@ -510,18 +488,6 @@ $EndComp
 Connection ~ 3600 4600
 Wire Wire Line
 	3600 4600 3800 4600
-$Comp
-L speectrl_parts:+16V #PWR?
-U 1 1 5BC2CCD6
-P 4800 4600
-F 0 "#PWR?" H 4800 4450 50  0001 C CNN
-F 1 "+16V" H 4815 4773 50  0000 C CNN
-F 2 "" H 4800 4600 50  0001 C CNN
-F 3 "" H 4800 4600 50  0001 C CNN
-	1    4800 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4800 4600
 Wire Notes Line
 	5200 3850 3400 3850
 Wire Notes Line

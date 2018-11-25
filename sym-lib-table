@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name speedctrl_parts)(type Legacy)(uri ${KIPRJMOD}/kicad-misc/speectrl_parts.lib)(options "")(descr ""))
   (lib (name 4xxx)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/4xxx.lib)(options "")(descr ""))
   (lib (name 4xxx_IEEE)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/4xxx_IEEE.lib)(options "")(descr ""))
   (lib (name 74xGxx)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/74xGxx.lib)(options "")(descr ""))
@@ -183,4 +182,5 @@
   (lib (name Triac_Thyristor)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Triac_Thyristor.lib)(options "")(descr ""))
   (lib (name Valve)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Valve.lib)(options "")(descr ""))
   (lib (name Video)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Video.lib)(options "")(descr ""))
+  (lib (name speedctrl_parts)(type Legacy)(uri ${KIPRJMOD}/kicad-misc-symbols/speedctrl_parts.lib)(options "")(descr ""))
 )
