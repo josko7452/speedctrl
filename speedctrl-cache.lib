@@ -178,6 +178,21 @@ X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# misc_power:+16V
+#
+DEF misc_power:+16V #PWR 0 40 Y Y 1 F N
+F0 "#PWR" 0 0 50 H I C CNN
+F1 "misc_power:+16V" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 1 1 0 -30 50 0 100 N
+P 2 1 1 0 0 0 0 100 N
+P 2 1 1 0 0 100 30 50 N
+X +16V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # power:+24V
 #
 DEF power:+24V #PWR 0 0 Y Y 1 F P
@@ -193,18 +208,19 @@ X +24V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power:+3V3
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power:+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power:+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

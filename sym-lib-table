@@ -183,4 +183,5 @@
   (lib (name Valve)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Valve.lib)(options "")(descr ""))
   (lib (name Video)(type Legacy)(uri ${KIPRJMOD}/kicad-symbols/Video.lib)(options "")(descr ""))
   (lib (name speedctrl_parts)(type Legacy)(uri ${KIPRJMOD}/kicad-misc-symbols/speedctrl_parts.lib)(options "")(descr ""))
+  (lib (name misc_power)(type Legacy)(uri C:/Users/bruno/WORK/personal/hw/speedctrl/kicad-misc-symbols/misc_power.lib)(options "")(descr ""))
 )
