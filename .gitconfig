@@ -1,5 +1,3 @@
-[core]
-	autocrlf = true
 [filter "kicad_project"]
 	clean = sed -E 's/^update=.*$/update=Date/'
 	smudge = cat
