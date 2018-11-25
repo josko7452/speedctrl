@@ -3,3 +3,14 @@
 *.xml
 *.bak
 *.bck
+*.000
+*.kicad_pcb-bak
+*~
+_autosave-*
+*.tmp
+*-rescue.lib
+*-save.pro
+*-save.kicad_pcb
+*.net
+*.dsn
+*.ses
