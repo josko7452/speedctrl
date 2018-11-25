@@ -4,3 +4,6 @@
 [submodule "kicad-symbols"]
 	path = kicad-symbols
 	url = https://github.com/KiCad/kicad-footprints.git
+[submodule "kicad-misc"]
+	path = kicad-misc
+	url = git@github.com:josko7452/kicad_misc.git 
