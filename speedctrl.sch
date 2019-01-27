@@ -42,17 +42,6 @@ F 3 "" H 8700 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NMOS_GSD Q1
-U 1 1 5BB5835D
-P 8400 2600
-F 0 "Q1" H 8605 2646 50  0000 L CNN
-F 1 "NCV8406A" H 8605 2555 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-223" H 8600 2700 50  0001 C CNN
-F 3 "https://www.onsemi.com/pub/Collateral/NCV8406-D.PDF" H 8400 2600 50  0001 C CNN
-	1    8400 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0105
 U 1 1 5BB58BF9
 P 8500 2950
@@ -641,7 +630,7 @@ F 3 "~" H 7500 2000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8500 2200 8500 2400
+	8500 2200 8500 2300
 Wire Wire Line
 	7500 1400 7500 1450
 Wire Wire Line
@@ -943,4 +932,22 @@ $EndComp
 Wire Wire Line
 	8800 5600 9150 5600
 Connection ~ 8800 5600
+$Comp
+L Device:Q_NMOS_GDSD Q1
+U 1 1 5C6155B0
+P 8400 2600
+F 0 "Q1" H 8687 2646 50  0000 L CNN
+F 1 "Q_NMOS_GDSD" H 8687 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 8600 2700 50  0001 C CNN
+F 3 "~" H 8400 2600 50  0001 C CNN
+	1    8400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 2400 8600 2300
+Wire Wire Line
+	8600 2300 8500 2300
+Connection ~ 8500 2300
+Wire Wire Line
+	8500 2300 8500 2400
 $EndSCHEMATC
