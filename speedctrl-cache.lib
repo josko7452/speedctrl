@@ -47,11 +47,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Generic:Conn_02x04_Top_Bottom
+# Connector_Generic:Conn_02x04_Odd_Even
 #
-DEF Connector_Generic:Conn_02x04_Top_Bottom J 0 40 Y N 1 F N
+DEF Connector_Generic:Conn_02x04_Odd_Even J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Generic:Conn_02x04_Top_Bottom" 50 -300 50 H V C CNN
+F1 "Connector_Generic:Conn_02x04_Odd_Even" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -68,12 +68,12 @@ S 150 -95 100 -105 1 1 6 N
 S 150 5 100 -5 1 1 6 N
 S 150 105 100 95 1 1 6 N
 X Pin_1 1 -200 100 150 R 50 50 1 1 P
-X Pin_2 2 -200 0 150 R 50 50 1 1 P
-X Pin_3 3 -200 -100 150 R 50 50 1 1 P
-X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-X Pin_5 5 300 100 150 L 50 50 1 1 P
-X Pin_6 6 300 0 150 L 50 50 1 1 P
-X Pin_7 7 300 -100 150 L 50 50 1 1 P
+X Pin_2 2 300 100 150 L 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 300 0 150 L 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
+X Pin_7 7 -200 -200 150 R 50 50 1 1 P
 X Pin_8 8 300 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
@@ -202,26 +202,26 @@ X PA3 9 500 200 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Regulator_Linear:LM317_3PinPackage
+# Regulator_Linear:LM317L_SO8
 #
-DEF Regulator_Linear:LM317_3PinPackage U 0 10 Y Y 1 F N
+DEF Regulator_Linear:LM317L_SO8 U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "Regulator_Linear:LM317_3PinPackage" 0 125 50 H V L CNN
-F2 "" 0 250 50 H I C CIN
-F3 "" 0 0 50 H I C CNN
-ALIAS AZ1117-ADJ
+F1 "Regulator_Linear:LM317L_SO8" 0 125 50 H V L CNN
+F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 200 50 H I C CIN
+F3 "" 0 -200 50 H I C CNN
 $FPLIST
- SOT?223*
- SOT?89*
- TO?220*
- TO?252*
- TO?263*
+ SOIC*3.9x4.9mm*P1.27mm*
 $ENDFPLIST
 DRAW
 S -200 75 200 -200 0 1 10 f
-X ADJ 1 0 -300 100 U 50 50 1 1 I
+X VI 1 -300 0 100 R 50 50 1 1 W
 X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
+X VO 3 300 0 100 L 50 50 1 1 P N
+X ADJ 4 0 -300 100 U 50 50 1 1 I
+X NC 5 -300 -100 100 R 50 50 1 1 N N
+X VO 6 300 0 100 L 50 50 1 1 P N
+X VO 7 300 0 100 L 50 50 1 1 P N
+X NC 8 300 -100 100 L 50 50 1 1 N N
 ENDDRAW
 ENDDEF
 #

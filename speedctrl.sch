@@ -31,23 +31,12 @@ Wire Wire Line
 Wire Wire Line
 	8500 3750 8500 3650
 $Comp
-L Regulator_Linear:LM317_3PinPackage U3
-U 1 1 5BB14FB2
-P 2050 3550
-F 0 "U3" H 2050 3792 50  0000 C CNN
-F 1 "LM317_3PinPackage" H 2050 3701 50  0000 C CNN
-F 2 "" H 2050 3800 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 2050 3550 50  0001 C CNN
-	1    2050 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L speedctrl_parts:ATB3225 TR1
 U 1 1 5BB580A9
 P 8900 2000
 F 0 "TR1" H 8900 2425 50  0000 C CNN
-F 1 "ATB3225" H 8900 2334 50  0000 C CNN
-F 2 "" H 8700 1750 50  0001 C CNN
+F 1 "ATB322524-0110" H 8900 2334 50  0000 C CNN
+F 2 "speedctrl-footprints:ATB3225" H 8700 1750 50  0001 C CNN
 F 3 "" H 8700 1750 50  0001 C CNN
 	1    8900 2000
 	1    0    0    -1  
@@ -58,7 +47,7 @@ U 1 1 5BB5835D
 P 8400 2600
 F 0 "Q1" H 8605 2646 50  0000 L CNN
 F 1 "NCV8406A" H 8605 2555 50  0000 L CNN
-F 2 "" H 8600 2700 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 8600 2700 50  0001 C CNN
 F 3 "https://www.onsemi.com/pub/Collateral/NCV8406-D.PDF" H 8400 2600 50  0001 C CNN
 	1    8400 2600
 	1    0    0    -1  
@@ -112,7 +101,7 @@ U 1 1 5BB62DAF
 P 10650 1800
 F 0 "J3" H 10730 1792 50  0000 L CNN
 F 1 "Conn_01x02" H 10730 1701 50  0000 L CNN
-F 2 "" H 10650 1800 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10650 1800 50  0001 C CNN
 F 3 "~" H 10650 1800 50  0001 C CNN
 	1    10650 1800
 	1    0    0    -1  
@@ -179,7 +168,6 @@ F 3 "~" H 2050 4050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 3850 2050 3900
-Connection ~ 2050 3850
 Wire Wire Line
 	2450 3550 2350 3550
 Wire Wire Line
@@ -234,17 +222,6 @@ $EndComp
 Wire Wire Line
 	1550 3550 1750 3550
 $Comp
-L Regulator_Linear:LM317_3PinPackage U1
-U 1 1 5BC29C63
-P 2050 1800
-F 0 "U1" H 2050 2042 50  0000 C CNN
-F 1 "LM317_3PinPackage" H 2050 1951 50  0000 C CNN
-F 2 "" H 2050 2050 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm317.pdf" H 2050 1800 50  0001 C CNN
-	1    2050 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR0109
 U 1 1 5BC29C6A
 P 1550 1750
@@ -290,7 +267,6 @@ F 3 "~" H 2050 2300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2050 2100 2050 2150
-Connection ~ 2050 2100
 Wire Wire Line
 	2450 1800 2350 1800
 Wire Wire Line
@@ -455,17 +431,6 @@ Wire Wire Line
 	10450 2300 10450 2200
 Connection ~ 10450 2200
 $Comp
-L Connector_Generic:Conn_02x04_Top_Bottom J2
-U 1 1 5C2B3B9E
-P 8500 5400
-F 0 "J2" H 8550 5717 50  0000 C CNN
-F 1 "Conn_02x04_Top_Bottom" H 8550 5626 50  0000 C CNN
-F 2 "" H 8500 5400 50  0001 C CNN
-F 3 "~" H 8500 5400 50  0001 C CNN
-	1    8500 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C9
 U 1 1 5C2B752B
 P 7500 1600
@@ -516,7 +481,7 @@ U 1 1 5C2C26DC
 P 6350 3600
 F 0 "J1" H 6430 3592 50  0000 L CNN
 F 1 "Conn_01x06" H 6430 3501 50  0000 L CNN
-F 2 "" H 6350 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 6350 3600 50  0001 C CNN
 F 3 "~" H 6350 3600 50  0001 C CNN
 	1    6350 3600
 	1    0    0    -1  
@@ -659,7 +624,7 @@ U 1 1 5C3110C0
 P 9500 1800
 F 0 "D2" H 9500 1584 50  0000 C CNN
 F 1 "NHP220S" H 9500 1675 50  0000 C CNN
-F 2 "" H 9500 1800 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 9500 1800 50  0001 C CNN
 F 3 "~" H 9500 1800 50  0001 C CNN
 	1    9500 1800
 	-1   0    0    1   
@@ -670,7 +635,7 @@ U 1 1 5C3111B6
 P 7500 2000
 F 0 "D1" V 7454 2079 50  0000 L CNN
 F 1 "NHP220S" V 7545 2079 50  0000 L CNN
-F 2 "" H 7500 2000 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123F" H 7500 2000 50  0001 C CNN
 F 3 "~" H 7500 2000 50  0001 C CNN
 	1    7500 2000
 	0    1    1    0   
@@ -708,19 +673,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0122
 U 1 1 5C50B6D9
-P 8800 5700
-F 0 "#PWR0122" H 8800 5450 50  0001 C CNN
-F 1 "GND" H 8805 5527 50  0000 C CNN
-F 2 "" H 8800 5700 50  0001 C CNN
-F 3 "" H 8800 5700 50  0001 C CNN
-	1    8800 5700
+P 9150 5600
+F 0 "#PWR0122" H 9150 5350 50  0001 C CNN
+F 1 "GND" H 9155 5427 50  0000 C CNN
+F 2 "" H 9150 5600 50  0001 C CNN
+F 3 "" H 9150 5600 50  0001 C CNN
+	1    9150 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8800 5500 8800 5600
-Connection ~ 8800 5600
-Wire Wire Line
-	8800 5600 8800 5700
 Wire Wire Line
 	6900 5400 8300 5400
 Wire Wire Line
@@ -943,4 +903,44 @@ F 3 "" H 1900 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1900 5300 1900 5000
+$Comp
+L Regulator_Linear:LM317L_SO8 U1
+U 1 1 5C5F4905
+P 2050 1800
+F 0 "U1" H 2050 2042 50  0000 C CNN
+F 1 "LM317L_SO8" H 2050 1951 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2050 2000 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 2050 1600 50  0001 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 2100
+$Comp
+L Regulator_Linear:LM317L_SO8 U3
+U 1 1 5C5F49A9
+P 2050 3550
+F 0 "U3" H 2050 3792 50  0000 C CNN
+F 1 "LM317L_SO8" H 2050 3701 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2050 3750 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 2050 3350 50  0001 C CNN
+	1    2050 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2050 3850
+Wire Wire Line
+	8800 5500 8800 5600
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J2
+U 1 1 5C5FBB0B
+P 8600 5500
+F 0 "J2" H 8650 5817 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8650 5726 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 8600 5500 50  0001 C CNN
+F 3 "~" H 8600 5500 50  0001 C CNN
+	1    8600 5500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8800 5600 9150 5600
+Connection ~ 8800 5600
 $EndSCHEMATC
