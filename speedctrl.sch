@@ -101,7 +101,7 @@ U 1 1 5BB62DAF
 P 10650 1800
 F 0 "J3" H 10730 1792 50  0000 L CNN
 F 1 "Conn_01x02" H 10730 1701 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10650 1800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10650 1800 50  0001 C CNN
 F 3 "~" H 10650 1800 50  0001 C CNN
 	1    10650 1800
 	1    0    0    -1  
@@ -935,7 +935,7 @@ U 1 1 5C5FBB0B
 P 8600 5500
 F 0 "J2" H 8650 5817 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 8650 5726 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 8600 5500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8600 5500 50  0001 C CNN
 F 3 "~" H 8600 5500 50  0001 C CNN
 	1    8600 5500
 	-1   0    0    1   
