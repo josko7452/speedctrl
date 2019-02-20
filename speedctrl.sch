@@ -525,12 +525,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 2500 3950 2500
 Connection ~ 3950 2500
-Wire Wire Line
-	3950 2200 3650 2200
-Wire Wire Line
-	3650 2200 3650 3800
-Wire Wire Line
-	3650 3800 6150 3800
 Connection ~ 3950 2200
 Text Label 5850 3800 0    50   ~ 0
 NRST
@@ -560,8 +554,8 @@ $Comp
 L Device:C C6
 U 1 1 5C2E5320
 P 4000 1800
-F 0 "C6" H 4115 1846 50  0000 L CNN
-F 1 "1u" H 4115 1755 50  0000 L CNN
+F 0 "C6" H 3885 1846 50  0000 R CNN
+F 1 "1u" H 3885 1755 50  0000 R CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4038 1650 50  0001 C CNN
 F 3 "~" H 4000 1800 50  0001 C CNN
 	1    4000 1800
@@ -794,8 +788,6 @@ NoConn ~ 5450 2300
 NoConn ~ 5450 2400
 NoConn ~ 5450 2500
 NoConn ~ 5450 2700
-NoConn ~ 4450 3000
-NoConn ~ 4450 3100
 NoConn ~ 4450 3300
 $Comp
 L power:GND #PWR0104
@@ -922,8 +914,8 @@ $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J2
 U 1 1 5C5FBB0B
 P 8600 5500
-F 0 "J2" H 8650 5817 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 8650 5726 50  0000 C CNN
+F 0 "J2" H 8650 5075 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 8650 5166 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 8600 5500 50  0001 C CNN
 F 3 "~" H 8600 5500 50  0001 C CNN
 	1    8600 5500
@@ -950,4 +942,117 @@ Wire Wire Line
 Connection ~ 8500 2300
 Wire Wire Line
 	8500 2300 8500 2400
+$Comp
+L Device:Crystal Y1
+U 1 1 5C61C680
+P 3900 3150
+F 0 "Y1" V 3854 3281 50  0000 L CNN
+F 1 "ABM10-16MHz" H 3945 3281 50  0000 L BNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 3900 3150 50  0001 C CNN
+F 3 "~" H 3900 3150 50  0001 C CNN
+	1    3900 3150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 3000 3900 3000
+Wire Wire Line
+	4450 3100 4350 3100
+Wire Wire Line
+	4350 3100 4350 3300
+Wire Wire Line
+	4350 3300 3900 3300
+Wire Wire Line
+	3250 2200 3250 3800
+Wire Wire Line
+	3250 2200 3950 2200
+Wire Wire Line
+	3250 3800 6150 3800
+$Comp
+L Device:C C13
+U 1 1 5C651F13
+P 3600 3000
+F 0 "C13" V 3348 3000 50  0000 C CNN
+F 1 "10pF" V 3439 3000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 2850 50  0001 C CNN
+F 3 "~" H 3600 3000 50  0001 C CNN
+	1    3600 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 5C651FEA
+P 3600 3300
+F 0 "C14" V 3348 3300 50  0000 C CNN
+F 1 "10pF" V 3439 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 3150 50  0001 C CNN
+F 3 "~" H 3600 3300 50  0001 C CNN
+	1    3600 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C65207C
+P 3450 3450
+F 0 "#PWR03" H 3450 3200 50  0001 C CNN
+F 1 "GND" H 3455 3277 50  0000 C CNN
+F 2 "" H 3450 3450 50  0001 C CNN
+F 3 "" H 3450 3450 50  0001 C CNN
+	1    3450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3450 3450 3300
+Connection ~ 3450 3300
+Wire Wire Line
+	3450 3300 3450 3000
+Wire Wire Line
+	3750 3300 3900 3300
+Connection ~ 3900 3300
+Wire Wire Line
+	3750 3000 3900 3000
+Connection ~ 3900 3000
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C662D45
+P 3050 5250
+F 0 "H1" H 3150 5296 50  0000 L CNN
+F 1 "MountingHole" H 3150 5205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 5250 50  0001 C CNN
+F 3 "~" H 3050 5250 50  0001 C CNN
+	1    3050 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C662DC1
+P 3050 5500
+F 0 "H2" H 3150 5546 50  0000 L CNN
+F 1 "MountingHole" H 3150 5455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 5500 50  0001 C CNN
+F 3 "~" H 3050 5500 50  0001 C CNN
+	1    3050 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C662E2F
+P 3050 5750
+F 0 "H3" H 3150 5796 50  0000 L CNN
+F 1 "MountingHole" H 3150 5705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 5750 50  0001 C CNN
+F 3 "~" H 3050 5750 50  0001 C CNN
+	1    3050 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C662EAF
+P 3050 6000
+F 0 "H4" H 3150 6046 50  0000 L CNN
+F 1 "MountingHole" H 3150 5955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 3050 6000 50  0001 C CNN
+F 3 "~" H 3050 6000 50  0001 C CNN
+	1    3050 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
