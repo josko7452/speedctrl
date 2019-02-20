@@ -96,6 +96,27 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device:Crystal
+#
+DEF Device:Crystal Y 0 40 N N 1 F N
+F0 "Y" 0 150 50 H V C CNN
+F1 "Device:Crystal" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -45 100 45 -100 0 1 12 N
+P 2 0 1 0 -100 0 -75 0 N
+P 2 0 1 20 -75 -50 -75 50 N
+P 2 0 1 20 75 -50 75 50 N
+P 2 0 1 0 100 0 75 0 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device:D
 #
 DEF Device:D D 0 40 N N 1 F N
@@ -201,6 +222,21 @@ X PA0 6 500 500 100 L 50 50 1 1 B
 X PA1 7 500 400 100 L 50 50 1 1 B
 X PA2 8 500 300 100 L 50 50 1 1 B
 X PA3 9 500 200 100 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Mechanical:MountingHole
+#
+DEF Mechanical:MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical:MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
